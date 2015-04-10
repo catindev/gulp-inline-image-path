@@ -10,8 +10,9 @@ var inlineImagePath = require('gulp-inline-image-path');
 
 gulp.task('default', function () {
 	gulp.src('index.html')
+		...
 		.pipe(inlineImagePath({path:"build/images"}))
-		.pipe(gulp.dest('path'));
+		...
 });
 ```
 
