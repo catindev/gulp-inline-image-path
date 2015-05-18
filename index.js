@@ -29,6 +29,7 @@ module.exports = function(opts) {
 				if (this.attr('src')) {
 					var image = this.attr('src').split('/');
 					this.attr('src', path + image[image.length-1]);
+					this.attr('ng-src', path + image[image.length-1]);
 				}
 			});
 			var output = $.html();

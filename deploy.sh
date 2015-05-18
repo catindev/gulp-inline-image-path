@@ -1,0 +1,1 @@
+npm set registry "http://registry.npmjs.org/" && git add --all && git commit -m "ng-src rewrite" && git push origin master && npm publish
