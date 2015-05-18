@@ -29,12 +29,12 @@ module.exports = function(opts) {
 				if (this.attr('src')) {
 					var image = this.attr('src');
 					if(image) {
-						image.split('/');
+						image = image.split('/');
 						this.attr('src', path + image[image.length-1]);
 					}
 					var ng_image = this.attr('ng-src');
 					if(ng_image) {
-						ng_image.split('/');
+						ng_image = ng_image.split('/');
 						this.attr('ng-src', path + ng_image[ng_image.length-1]);
 					}								
 				}

@@ -1,6 +1,6 @@
 {
   "name": "gulp-inline-image-path",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Convert and replace src attrs within your data.",
   "main": "index.js",
   "scripts": {
