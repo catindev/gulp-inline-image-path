@@ -28,8 +28,9 @@ module.exports = function(opts) {
 			$('img').each(function() {
 				if (this.attr('src')) {
 					var image = this.attr('src').split('/');
+					var ng_image = this.attr('ng-src').split('/');
 					this.attr('src', path + image[image.length-1]);
-					this.attr('ng-src', path + image[image.length-1]);
+					this.attr('ng-src', path + ng_image[ng_image.length-1]);
 				}
 			});
 			var output = $.html();
