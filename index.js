@@ -27,12 +27,12 @@ module.exports = function(opts) {
 			var $ = cheerio.load(String(file.contents));
 			$('img').each(function() {
 				if (this.attr('src')) {
-					var image = this.attr('src')
+					var image = this.attr('src');
 					if(image) {
 						image.split('/');
 						this.attr('src', path + image[image.length-1]);
 					}
-					var ng_image = this.attr('ng-src').split('/');
+					var ng_image = this.attr('ng-src');
 					if(ng_image) {
 						ng_image.split('/');
 						this.attr('ng-src', path + ng_image[ng_image.length-1]);
